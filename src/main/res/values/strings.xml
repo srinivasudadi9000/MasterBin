@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MasterBin</string>
+
+    <array name="cubic_capacity">
+
+        <item>"--Select--"</item>
+        <item>"0.12"</item>
+        <item>"1.00"</item>
+        <item>"3.00"</item>
+        <item>"8.00"</item>
+        <item>"10.00"</item>
+
+    </array>
+</resources>

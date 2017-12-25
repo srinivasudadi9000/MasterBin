@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebackgroundbox"
+    tools:context="bah.masterbin.Registration">
+
+    <include
+        android:id="@+id/header_page"
+        layout="@layout/header"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_page">
+
+
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:id="@+id/bin_number_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Bin Number " />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:id="@+id/locality_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Locality Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ward Number "
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/Ward_No_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Ward No" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Bin Cubic Capacity"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/Bin_Cubic_Capacity_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Ward No" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Bin Photo : "
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/bin_photo_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/dummy"
+
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/registration_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+     </ScrollView>
+    <!--
+          Bin Number
+  Locality Name
+  Bin Cubic Capacity
+  Bin Photo
+  Ward No
+  Ward No - Dropdown
+  Bin Cubic Capacity - Dropdown
+  Bin Cubic Capacity : 0.12 , 1.00,3.00,8.00,10.00!-->
+</RelativeLayout>
